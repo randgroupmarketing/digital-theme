@@ -1,4 +1,4 @@
-# Randgroup digital
+# Randgroup Digital
 
 # Uses
 
