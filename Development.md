@@ -5,19 +5,21 @@ Your development machine must meet the following requirements to get started:
 Node.js >= 4.5.0
 After installing Node.js, we recommend that you update to the latest version of npm:
 
-npm install -g npm@latest```
+```bash
+npm install -g npm@latest
+```
 From the command line:
 
-Install gulp and Bower globally with npm install -g gulp bower
-Navigate to the theme directory, then run npm install
-Run bower install
-You now have all the necessary dependencies to run the build process.
+- Install gulp and Bower globally with npm install -g gulp bower
+- Navigate to the theme directory, then run npm install
+- Run bower install
+- You now have all the necessary dependencies to run the build process.
 
 #Available gulp commands
 
-gulp — Compile and optimize the files in your assets directory
-gulp watch — Compile assets when file changes are made
-gulp --production — Compile assets for production (no source maps)
+- gulp — Compile and optimize the files in your assets directory
+- gulp watch — Compile assets when file changes are made
+- gulp --production — Compile assets for production (no source maps)
 To use BrowserSync during gulp watch you need to update devUrl at the bottom of assets/manifest.json to reflect your local development hostname.
 
 #Adding front-end packages with Bower
