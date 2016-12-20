@@ -30,6 +30,14 @@ function setup() {
     'primary_navigation' => __('Primary Navigation', 'sage')
   ]);
 
+  register_nav_menus([
+    'top_navigation' => __('Top Navigation', 'sage')
+  ]);
+
+  register_nav_menus([
+    'footer_navigation' => __('Footer Navigation', 'sage')
+  ]);
+
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
@@ -85,7 +93,8 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
-    is_page_template('template-custom.php'),
+    is_page_template('template-custom.php'), 
+    is_page_template('fullwidth.php'),     
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
