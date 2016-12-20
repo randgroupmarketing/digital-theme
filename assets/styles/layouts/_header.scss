@@ -1,0 +1,35 @@
+header {
+    background: transparent;
+    z-index: 9999;
+    left: 0;
+    position: absolute;
+    right: 0;
+    padding-top: 30px;
+}
+
+.logo {
+	width:250px;
+}
+
+.top-nav {
+
+	ul {
+			text-align: right;
+		li {
+			display: inline;
+		}
+	}
+	
+}
+
+.primary-nav {
+
+	
+	ul {
+		
+		li {
+			display: inline;
+		}
+	}
+	
+}
