@@ -37,6 +37,9 @@ function setup() {
   register_nav_menus([
     'footer_navigation' => __('Footer Navigation', 'sage')
   ]);
+  register_nav_menus([
+    'footer_navigation_2' => __('Footer Navigation_2', 'sage')
+  ]);
 
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
@@ -79,6 +82,15 @@ function widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
+  
+  register_sidebar([
+    'name'          => __('Blog', 'sage'),
+    'id'            => 'sidebar-blog',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);  
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
@@ -94,7 +106,11 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'), 
-    is_page_template('fullwidth.php'),     
+    is_page_template('fullwidth.php'),  
+    is_page_template('get-started.php'),
+    is_archive(), 
+    is_page_template('squeeze.php'),          
+    is_search(), // DJN - 1/6/2016 - Removing sidebar for search results page
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

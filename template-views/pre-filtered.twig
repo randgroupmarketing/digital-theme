@@ -1,0 +1,37 @@
+<div class="filter-wrapper" style="display:none">
+	<form name="filter-form" action="#">
+			
+			<input type="hidden" name="{{input_filter_product}}" id="{{input_filter_product}}" value="{{filter_dlm_download_topic}}">
+			<input type="hidden" name="{{input_filter_product}}" id="{{input_filter_category}}" value="{{filter_dlm_download_category}}">
+
+		<div class="col-sm-6"><button class="filter-submit btn btn-active">Filter</button></div>
+	</form>
+</div>
+<div id="filters-resources" class="resources-block clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="filter-resources-results" class="filter-results">
+					<div class="row resource-item-wrapper">
+						<div class="col-sm-3 span3 resource-item" data-tmplt="resource">
+						<div >
+							<div class="resource-item-wrap">
+								<a class="download-link" href="{{download_url}}" >
+								<div class="resource-item-cover">{{ '{{' }} download_image{{ '}}' }}
+
+								</div>
+									<div class="resource-item-details">
+										<div class="resource-item-title">{{ '{{' }} download_title{{ '}}' }} ({{ '{{' }} download_count{{ '}}' }})</div>
+									</a>
+
+
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

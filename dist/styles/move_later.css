@@ -1,0 +1,220 @@
+#filters-resources select {
+    width: 220px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+select, input[type="file"] {
+    height: 30px;
+    line-height: 30px;
+}
+body.search article header {
+	position: relative;
+}
+
+
+footer#footer {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ececec;
+	background-color: #1c1c1c;
+	padding: 20px 10px;
+}
+footer#footer p {
+	font-size: 15px;
+}
+footer#footer h3 {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+footer#footer .container {
+	padding: 0;
+}
+footer#footer .container .row {
+	margin: 0;
+	
+}
+footer#footer .follow h3 {
+	padding: 12px 0 10px 0;
+	margin: 0;
+}
+footer#footer .followus {
+	padding: 0;
+}
+#ms-cert {
+    margin-top: 10px;
+    width: 85%;
+}
+.footlinks {
+	margin: 20px 0px 0px -25px;
+}
+
+.footlinks ul {
+	list-style-type: none;
+	font-size: 16px;
+}
+
+.footlinks ul li{
+	line-height: 20px;
+}
+
+.footlinks ul a{
+	color:#f3f4f5;
+}
+
+
+.footlinks ul a:hover{
+	color:#0087cb;
+}
+
+.footer-nav-1 {
+	padding-right:25px;
+}
+.footline {
+    margin: 10px 0;
+    border-bottom: 1px #333 solid;
+}
+
+
+footer#footer .container .row .col-md-3,
+footer#footer .container .row .col-md-4 {
+	padding: 0;
+}
+.copyright p {
+    line-height: 20px;
+    text-align: center;
+}
+
+
+
+/* fixing box-link code to simulate code used on RandGroup.com */
+
+.box-link {
+	border: 1px solid #ccc;
+    padding: 18px;
+    margin: 10px 0;
+    background: #FDFDFD;
+	transition: background 0.2s ease,
+  	padding 0.8s linear;
+}
+.box-link:hover {
+	background-color: aliceblue;
+	transition: background 0.2s ease,
+              padding 0.8s linear;
+}
+
+.box-link h4 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 17.5px;
+	line-height: normal;
+	margin: 10px 0;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+.box-link ul {
+	border-top: 1px solid #ccc;
+	padding-top:10px;
+}
+.box-link p {
+	font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.box-link a {
+	transition: all 0.15s ease;
+}
+.box-link img {
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+.box-link:before, .box-link:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.box-link [class*="span"] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 2.127659574468085%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box-link [class*="span"]:first-child {
+    margin-left: 0;
+}
+.box-link .span7 {
+    width: 57.44680851063829%;
+}
+.box-link .span5 {
+    width: 40.42553191489362%;
+}
+
+.box-link .btn {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #ccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-bottom-color: #b3b3b3;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.box-link .btn-large {
+    padding: 11px 19px;
+    font-size: 17.5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.box-link [class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(../../assets/images/glyphicons-halflings.png);
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+}
+.box-link .icon-download-alt {
+    background-position: -96px -24px;
+}
+.box-link .btn-large [class^="icon-"], .btn-large [class*=" icon-"] {
+    margin-top: 4px;
+}
+.box-link .text-center {
+    text-align: center;
+}
+.box-link .wp-post-image {
+    margin: 0px 20px 20px 0px;
+}

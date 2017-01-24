@@ -1,0 +1,33 @@
+				</div> <!-- close pf component -->
+			</div> <!-- span10 -->
+		</div> <!-- close pf component -->
+	</div> <!-- content-->
+</div><!-- wrap.container -->
+
+
+	<div class="cta-fullwidth">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span5 offset1">		
+					<h4>{{ dlm_title }}</h4>		
+					<p class="description">{{ dlm_short_description }}</p>
+					{% if dlm_downloaded > 0 %}	
+						<p><small>{{ dlm_downloaded }}</small></p>
+					{% endif %}		
+					<p><a href="{{ dlm_download_link }}" class="btn btn-large"><i class="icon-download-alt"></i>{{ verb }}</a></p>	</div>	
+			
+					<div class="span5 download-clip">
+						<a href="{{ dlm_download_link }}" class="downloadLink text-center">
+							{{ dlm_image }}
+						</a>	
+					</div>
+			</div>		
+		</div>			
+	</div>
+
+<div class="wrap container">
+	<div class="content row-fluid">
+		<div class="main span12" role="main">
+			 <div class="span10 offset1">
+				<div class="pf-component">
+		

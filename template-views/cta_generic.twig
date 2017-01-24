@@ -1,0 +1,15 @@
+<div class="row box-link ">
+	<div class="span7">		
+		<h4 style="text-align: left;">{{ dlm_title }}</h4>		
+		<p class="description">{{ dlm_short_description }}</p>
+		{% if dlm_downloaded > 0 %}	
+			<p><small>{{ dlm_downloaded }}</small></p>
+		{% endif %}		
+		<p><a href="{{ dlm_download_link }}" class="btn btn-large"><i class="icon-download-alt"></i>{{ verb }}</a></p>	</div>	
+
+		<div class="span5 download-clip">
+			<a href="{{ dlm_download_link }}" class="downloadLink text-center">
+				{{ dlm_image }}
+			</a>	
+		</div>
+</div>

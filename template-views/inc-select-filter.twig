@@ -1,0 +1,11 @@
+<label for="{{ input_filter_category }}">{{input_name}}</label>
+<span class="select">
+	<select name="{{input_filter_category}}" id="{{input_filter_category}}">
+		<option value=""  selected>Content-Type</option>
+		
+		{% for category in categories %}
+			<option value="{{category}}">{{category |capitalize |replace({'-': ' ' }) }}</option>
+		{% endfor %}
+	
+	</select>
+</span>

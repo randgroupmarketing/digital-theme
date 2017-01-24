@@ -1,0 +1,83 @@
+{# --------------------------------------------
+
+-- Fields set in PHP file --
+$context['title'] = 'Most Popular Resources';
+$context['filter_name'] = "";
+$context['input_filter_product'] = "select_product";
+$context['input_filter_category'] = "select_category";
+$context['categories'] = $swx_public->categories;
+$context['resources'] = $resources;
+
+----------------------------------------------- #}
+
+<script id="resource-item-template" type="text/template">
+	<div class="col-sm-3 span3 resource-item" data-tmplt="resource" style="display:inline-block;">
+		<div class="resource-item-wrap">
+			<a class="download-link" href="{{ '{{' }}download_url{{ '}}' }}" >
+			<div class="resource-item-cover">{{ '{{' }}download_image{{ '}}' }}</div>
+			<div class="resource-item-details">
+				<div class="resource-item-title">{{ '{{' }}download_title{{ '}}' }} </div>
+
+				<span class="resource-item-type">{{ '{{' }}download_type{{ '}}' }}</span>
+				<span class="resource-item-downloaded">Downloaded({{ '{{' }}download_count{{ '}}' }})</span>
+			</div>
+			</a>
+		</div>
+	</div>
+</script>
+
+<div id="filters-resources" class="resources-block clearfix">
+				
+	<form name="filter-form" action="#">
+		<div class="container">
+			<div class="filter-wrapper">
+			<div class="row filter-bg"> 
+						<div class="col-sm-3 ">
+							{% include 'inc-select-filter.twig' %}
+						</div>
+						<div class="col-sm-4 "><button class="filter-submit btn btn-active">Filter</button></div>
+			</div>
+			
+		</div>
+	</form>
+
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h4>{{title}}</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="filter-resources-results" class="filter-results">
+				<div class="resource-item-wrapper">
+										
+					{% for resource in resources %}
+					
+						<div class="col-md-4 resource-item"  style="display:inline-block;">
+							<div class="resource-item-wrap">
+								<a class="download-link" href="{{resource['link']}}" >
+									<div class="resource-item-cover">
+										{{resource['image']}}
+									</div>
+									<div class="resource-item-details">
+										<div class="resource-item-title">{{resource['details'].post_title}}</div>
+											<div class="type-download">
+												<span class="resource-item-type">{{ resource['content_type']|capitalize }}</span>
+												<span class="resource-item-downloaded">Downloaded ({{resource['count']}})</span>
+											</div>
+									</div>	
+								</a>
+							</div>
+						</div>				
+
+					{% endfor %}
+				</div>
+			</div>			
+		</div>		
+	</div>
+</div>	
+
+
+</div>

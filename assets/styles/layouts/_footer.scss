@@ -1,23 +1,28 @@
 footer {
-	background: #242424;
-	padding:35px 0;
-	color:#fff;
-	.copyright {
-		
-	}
-	.foot-links {
-					
-		ul {
-				text-align: right;
-			li {
-				display: inline;
-				padding-left:15px;
-				
-				a {
-					color:#fff;
-				}
-			}
-	}
-		
-	}
+    background: #242424;
+    padding:35px 0;
+    color:#fff;
+    .copyright {
+        
+    }
+    .foot-links {
+                    
+        ul {
+            text-align: right;
+            li {
+                display: inline;
+                padding-left:15px;
+                
+                a {
+                    color:#fff;
+                }
+            }
+        }
+        
+    }
+
+    .footline {
+        margin: 10px 0;
+        border-bottom: 1px #333 solid;
+    }
 }

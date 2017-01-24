@@ -1,0 +1,154 @@
+
+<style>
+/* This should be moved to a theme CSS file. */
+.page-header { display:none; }
+.navbar-inner-2 { display:none; }
+.download-info-heading { padding-top: 25px; }
+#menu-top { display:none; }
+.banner {display:none;} 
+/* change this later */
+   .banner {    background-color: #00263D;
+    min-height: 150px;
+    margin-bottom: 150px; }
+/* end change this later */
+
+.top-nav {
+display:none;}
+
+.primary-nav {display:none;}
+
+.bc-container {background:#f6f7f8;padding-top:10px;}
+body {margin-top:0;}
+
+div#download-page {
+padding-top: 50px;}
+
+
+.followus {
+    list-style-type: none;
+    margin-left: -40px!important;
+}
+.resource-image {
+    margin-bottom: 30px;
+    max-height: 400px;
+    overflow: hidden;
+    max-width: 800px;
+    -webkit-transition: max-width .5s ease-out;
+    -moz-transition: max-width .5s ease-out;
+    -ms-transition: max-width .5s ease-out;
+    -o-transition: max-width .5s ease-out;
+    transition: max-width .5s ease-out;
+}
+
+.resource-image img {
+    max-width: 100%;
+    height:auto;
+    -webkit-transition: margin-top .5s ease-out;
+    -moz-transition: margin-top .5s ease-out;
+    -ms-transition: margin-top .5s ease-out;
+    -o-transition: margin-top .5s ease-out;
+    transition: margin-top .5s ease-out;
+}
+
+.resource-top-header {
+	background-color: #00263D;
+	height:130px;   
+}
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+/* IE10+ CSS styles go here */
+	.svg-logo {
+	margin-top:-10px!important;
+	}
+	.rg-logo {
+	margin-top:-115px!important;
+	}
+	.mega-ie11 {
+	top:-70px!important;
+	}
+	
+	.followus {
+    list-style-type: none;
+    margin-left: -40px!important;
+}
+	
+}
+
+</style>
+
+<div class="container-fluid">
+	<div class="row resource-top-header">
+		<div class="container">
+			<div class="col-lg-12">
+						<div class="svg-logo" style="width:250px; height:82px;margin-top:20px;">
+<div style="margin-bottom:-8px;"><a href="https://www.randgroup.com/digital"><img width="250" height="82" class="style-svg" style="margin-bottom:-10px; "src="https://www.randgroup.com/digital/wp-content/uploads/2017/01/Digital-logo-1-1.svg"></a></div>
+<div class="rg-logo"><a href="https://www.randgroup.com"><img width="250" height="82" class="style-svg" src="https://www.randgroup.com/digital/wp-content/uploads/2017/01/Digital-logo-2-1.svg"></a></div>
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="resource-page-single" id="download-page">
+	<div class="resources-top">
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-9  col-md-8 col-sm-7 col-xs-12 ">
+						<div class="res-imag resource-image">
+							{{img}}
+						</div>
+							<div class="content-copy">
+								<h1 class="download-info-heading resource-header">{{dlm_download_title}} </h1>
+								<h5 class="download-desc-heading">{{desc_heading}}</h5>
+								<div class="desc-copy resource-description">
+									{{dlm_acf_landing_page_copy}}
+								</div>
+							</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 ">
+						<!-- form here-->
+
+							
+								{% if members_only == false %}
+									<!-- not members only -->
+								   {% if download_button == '' %}
+									<p>
+										{{download_button}}
+									</p>		
+								   {% endif %}
+							
+								{% else %}
+
+
+									<p>Please complete form to access:</p>
+
+									<div class="js-cd-form" style="display:none" >
+										{{form}}
+									</div>
+									<noscript><div class="alert alert-warning">Please enable javascript or open in a new browser.</div></noscript>
+
+							    {% endif %}
+
+					</div>			
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<p>&nbsp;</p>
+<script type="text/javascript">
+ (function($, window){
+ 	var prefill = {};
+
+ 	{% for key,form_value in form_values %}
+ 		prefill.{{key}} = '{{form_value}}';     
+    {% endfor %}
+
+    window.prefill = prefill;
+ }(jQuery, window));
+</script>
